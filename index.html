@@ -13,12 +13,12 @@
     function AdicionarProduto(){
       let produto=prompt("Digite o produto");
       let quantidade=prompt("quantidade");
-      let produto=JSON.parse(localStorage.getItem("produto"))||[];
+      let produtos=JSON.parse(localStorage.getItem("produtos"))||[];
       produtos.push({
         produto:produto,
         quantidade:quantidade
       });
-      localStorage.setItem("produtos", JSON.stringfy(produto));
+      localStorage.setItem("produtos", JSON.stringfy(produtos));
       let lista= document.getElementById("lista");
     lista.innerHTML +=
         '<input type="checkbox">' +
