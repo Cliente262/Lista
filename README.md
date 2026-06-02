@@ -10,7 +10,7 @@
   </button>
     <script> 
     function AdicionarProdutos(){
-    alert("Funcionau!");
+    let produto=prompt(Digite o produto");
           }
           </script>
   </body>
