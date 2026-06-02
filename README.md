@@ -8,6 +8,7 @@
   <button onclick="AdicionarProdutos()">
     Adicionar Produtos
   </button>
+    <div id="lista"></div>/div>
     <script> 
     function AdicionarProdutos(){
     let produto=prompt("Digite o produto");
