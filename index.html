@@ -12,10 +12,11 @@
     <script> 
     function AdicionarProdutos(){
     let produto=prompt("Digite o produto");
+      let quantidade=prompt("quantidade");
       let lista=
         document.getElementById("lista");
       lista.innerHTML +=
-        '<inout type="checkbox">'
+        '<input type="checkbox">'
       +produtos+
         '('+quantidade+')+
         '<br>';
