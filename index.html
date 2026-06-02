@@ -15,14 +15,14 @@
       let quantidade=prompt("quantidade");
       let produto=JSON.parse(localStorage.getItem("produto"))||[];
       produto.push({
-        produto:produto,
+        produto:nomeproduto,
         quantidade:quantidade
       });
       localStorage.setItem("produto", JSON.stringfy(produto));
       let lista= document.getElementById("lista");
     lista.innerHTML +=
         '<input type="checkbox">' +
-         produto+
+         nomeproduto+
         '('+quantidade+')'+
         '<br>';
     }
