@@ -12,6 +12,9 @@
     <script> 
     function AdicionarProdutos(){
     let produto=prompt("Digite o produto");
+      let lista=
+        document.getelementById("lista");
+      lista.innerHTML +=produto+ "br";
           }
           </script>
   </body>
