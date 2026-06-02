@@ -5,18 +5,17 @@
   </head>
   <body>
   <h1>Lista de Compras</h1>
-  <button onclick="AdicionarProdutos()">
-    Adicionar Produtos
+  <button onclick="AdicionarProduto()">
+    Adicionar Produto
   </button>
     <div id="lista"></div>
     <script> 
-    function AdicionarProdutos(){
+    function AdicionarProduto(){
     let produto=prompt("Digite o produto");
       let quantidade=prompt("quantidade");
-      let lista=
-        document.getElementById("lista");
+      let lista= document.getElementById("lista");
     lista.innerHTML +=
-        '<input type="checkbox">'+
+        '<input type="checkbox">' +
          produto+
         '('+quantidade+')'+
         '<br>';
