@@ -11,18 +11,17 @@
     <div id="lista"></div>
     <script> 
     function AdicionarProduto(){
-    let produto=prompt("Digite o produto");
       let quantidade=prompt("quantidade");
       let produto=JSON.parse(localStorage.getItem("produto"))||[];
       produto.push({
-        produto:nomeproduto,
+        produto:produto,
         quantidade:quantidade
       });
       localStorage.setItem("produto", JSON.stringfy(produto));
       let lista= document.getElementById("lista");
     lista.innerHTML +=
         '<input type="checkbox">' +
-         nomeproduto+
+         produto+
         '('+quantidade+')'+
         '<br>';
     }
